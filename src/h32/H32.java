@@ -11,7 +11,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- *
+ * Simulator for the H32 instruction set.
  * @author alan.whitehurst
  */
 public class H32 {
