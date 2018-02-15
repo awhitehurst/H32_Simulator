@@ -47,17 +47,18 @@ public class H32 {
         //decode
         int opcode = REG[IR] >>> 24;
         MAR = REG[IR] & REG[XM];
-        int OFFSET = 0;
-        if ((MAR & 0x800000) == 0x800000) {
-            OFFSET = ((~MAR & 0xFFFFFF) + 1) * -1;
-        } else {
-            OFFSET = MAR;
-        }
+//        int OFFSET = 0;
+//        if ((MAR & 0x800000) == 0x800000) {
+//            OFFSET = ((~MAR & 0xFFFFFF) + 1) * -1;
+//        } else {
+//            OFFSET = MAR;
+//        }
         // execute instruction
         if (trace) {
             System.out.printf("MEM[%08X]=%08X (%4s %06X): ", REC[PC], MEM[REC[PC]], nmemonics[opcode], MAR);
         }
         int old = 0;
+        inst[opcode].execute(REG, MEM, MAR);
         switch (opcode) {
             case 0x00:
                 // LD X
