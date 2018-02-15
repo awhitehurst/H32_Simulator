@@ -11,7 +11,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * Simulator for the H32 instruction set.
+ *
  * @author alan.whitehurst
  */
 public class H32 {
@@ -23,6 +23,7 @@ public class H32 {
     private boolean trace;
     private Scanner console;
     private int[] REC;
+    private Executable[] inst = {new Ld()};
 
     public H32() {
         console = new Scanner(System.in);
@@ -61,7 +62,9 @@ public class H32 {
             case 0x00:
                 // LD X
                 // AC = MEM[x]
-                REG[AC] = MEM[MAR];
+                //REG[AC] = MEM[MAR];
+                //break;
+                new Ld().execute(REG, MEM, MAR); 
                 break;
             case 0x01:
                 // ST X
