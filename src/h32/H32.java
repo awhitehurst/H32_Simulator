@@ -1,5 +1,6 @@
 package h32;
 
+import instructions.*;
 import java.io.DataInputStream;
 import java.io.File;
 import java.io.FileInputStream;
@@ -23,7 +24,7 @@ public class H32 {
     private boolean trace;
     private Scanner console;
     private int[] REC;
-    private Executable[] inst = {new Ld()};
+    private Executable[] inst = {new Ld(),null,null,null,new Ldr(),};
 
     public H32() {
         console = new Scanner(System.in);
@@ -59,6 +60,7 @@ public class H32 {
         }
         int old = 0;
         inst[opcode].execute(REG, MEM, MAR);
+        // everything from here to the end of this method gets removed
         switch (opcode) {
             case 0x00:
                 // LD X
@@ -97,8 +99,7 @@ public class H32 {
             case 0x04:
                 // LDR S
                 // AC = MEM[BP+S]
-                old = REG[AC];
-                REG[AC] = MEM[REG[BP] + OFFSET];
+                new Ldr().execute(REG, MEM, MAR); 
                 break;
             case 0x05:
                 // STR S
