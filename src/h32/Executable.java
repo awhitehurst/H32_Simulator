@@ -9,5 +9,6 @@ package h32;
 public interface Executable extends RegisterManipulator {
     
     public void execute(int [] regs, int [] mem, int mar);
+    //public void execute(int [] regs, int [] mem, int mar, boolean trace);
     
 }
