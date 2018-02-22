@@ -7,23 +7,20 @@ package instructions;
 
 import h32.Executable;
 import h32.H32;
-import static h32.H32.AC;
-import static h32.H32.BP;
 
 /**
  *
  * @author pcctoo
  */
-public class Ldr implements Executable {
-       // LDR S
-                // AC = MEM[BP+S]
-           
+public class Esba implements Executable{
+         //ESBA
+              
 
     @Override
     public void execute(int[] regs, int[] mem, int mar) {
-        int old = regs[AC];
-        int OFFSET = 0;
-                regs[AC] = mem[regs[BP] + OFFSET];
+        // mem[--SP]=BP;BP=SP
+                mem[--regs[SP]] = regs[BP];
+                regs[BP] = regs[SP];
     }
                
 }

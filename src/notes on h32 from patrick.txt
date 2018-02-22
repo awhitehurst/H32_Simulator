@@ -1,0 +1,10 @@
+implements Executable
+
+
+esba may not work right... i am confused on it
+
+ain has no real logic to it. i am not sure what i am suposed to be doing with it.
+
+with halt, i am not sure aggain how to properly implament it.
+
+hout is anouther one missing the java logic. this is seaming like a theme with the files i have
