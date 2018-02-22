@@ -628,7 +628,7 @@ public class H32 {
 
     private static final String[] nmemonics = {
         "LD", "ST", "ADD", "SUB", "LDR", "STR", "ADDR", "SUBR", "LDC", "JA", "JZOP", "JN", "JZ", "JNZ", "CALL", "RET",
-        "LDI", "STI", "PUSH", "POP", "ALOC", "DLOC", "SWAP", "ADDC", "SUBC", "ESBA", "REBA", "CORA", "SCMP", "UCMP", "SHLL", "SHRL",
+        "LDI", "STI", "PUSH", "POP", "ALOC", "DLOC", "SWAP", "ADDC", "SUBC", "ESBA", "REBA", "CORA", "SCPM", "UCMP", "SHLL", "SHRL",
         "SHRA", "MUL", "MULT", "DIV", "REM", "ADDY", "OR", "XOR", "AND", "FLIP", "CALI", "SECT", "DECT", "SODD", "BPBP", "POBP",
         "PUBP", "BCPY", "", "", "", "", "", "", "", "", "", "", "", "", "", "",
         "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",
