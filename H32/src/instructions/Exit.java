@@ -1,4 +1,4 @@
-package instructures;
+package instructions;
 
 import h32.Executable;
 
