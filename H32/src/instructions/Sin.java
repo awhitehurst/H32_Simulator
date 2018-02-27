@@ -14,13 +14,12 @@ import java.util.Scanner;
  */
 public class Sin implements Executable {
     
-    private Scanner console;
 
     @Override
     public void execute(int[] regs, int[] mem, int mar, boolean trace) {
         // SIN
         // MEM[AC] << console
-        String input = console.nextLine();
+        String input = (new Scanner(System.in)).nextLine();
         for (int i = 0; i < input.length(); ++i) {
             mem[regs[AC] + i] = input.charAt(i);
         }
