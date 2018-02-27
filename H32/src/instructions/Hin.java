@@ -7,12 +7,15 @@ package instructions;
 
 import h32.Executable;
 import static java.lang.System.console;
+import java.util.Scanner;
 
 /**
  *
  * @author Alex
  */
 public class Hin implements Executable {
+    
+    private Scanner console;
 
     @Override
     public void execute(int[] regs, int[] mem, int mar, boolean trace) {

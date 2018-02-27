@@ -6,12 +6,15 @@
 package instructions;
 
 import h32.Executable;
+import java.util.Scanner;
 
 /**
  *
  * @author Adrian Sanchez
  */
 public class Sin implements Executable {
+    
+    private Scanner console;
 
     @Override
     public void execute(int[] regs, int[] mem, int mar, boolean trace) {

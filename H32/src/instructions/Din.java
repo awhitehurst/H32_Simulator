@@ -6,6 +6,7 @@
 package instructions;
 
 import h32.Executable;
+import java.util.Scanner;
 
 
 
@@ -15,6 +16,8 @@ import h32.Executable;
  * @author Alex
  */
 public class Din implements Executable {
+    
+    private Scanner console;
                
 
     @Override
