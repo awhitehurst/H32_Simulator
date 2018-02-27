@@ -15,8 +15,7 @@ public class Ldc implements Executable {
 
     @Override
     public void execute(int[] regs, int[] mem, int mar, boolean trace) {
-        long old = regs[AC];
-                regs[AC] = mar;
+        regs[AC] = mar;
     }
-    
+
 }
