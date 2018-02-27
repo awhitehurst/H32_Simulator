@@ -1,11 +1,8 @@
 package instructions;
 
 import h32.H32;
-import static h32.H32.AC;
 import h32.RegisterManipulator;
-import org.junit.After;
 import static org.junit.Assert.assertEquals;
-import org.junit.Before;
 import org.junit.Test;
 
 /**
@@ -14,8 +11,8 @@ import org.junit.Test;
  */
 public class StTest implements RegisterManipulator {
     
-    private H32 sim = new H32();
-    private St inst = new St();
+    private final H32 sim = new H32();
+    private final St inst = new St();
     
     public StTest() {
     }
