@@ -6,7 +6,6 @@
 package instructions;
 
 import h32.Executable;
-import h32.H32;
 import static h32.RegisterManipulator.PC;
 
 /**
@@ -16,7 +15,7 @@ import static h32.RegisterManipulator.PC;
 public class Dect implements Executable{
 
     @Override
-    public void execute(int[] regs, int[] mem, int mar) {
+    public void execute(int[] regs, int[] mem, int mar,boolean trace) {
            regs[CT] = regs[CT] - regs[ONE];
                 if (regs[CT] == 0) {
                     regs[PC] = regs[PC] + 1;

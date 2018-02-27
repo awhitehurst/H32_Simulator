@@ -18,7 +18,7 @@ public class Call implements Executable{
         
 
     @Override
-    public void execute(int[] regs, int[] mem, int mar) {
+    public void execute(int[] regs, int[] mem, int mar, boolean trace) {
                 mem[--regs[SP]] = regs[PC];
                 regs[PC] = mar;
     }

@@ -17,7 +17,7 @@ public class Esba implements Executable{
               
 
     @Override
-    public void execute(int[] regs, int[] mem, int mar) {
+    public void execute(int[] regs, int[] mem, int mar, boolean trace) {
         // mem[--SP]=BP;BP=SP
                 mem[--regs[SP]] = regs[BP];
                 regs[BP] = regs[SP];

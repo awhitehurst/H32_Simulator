@@ -9,7 +9,7 @@ import h32.Executable;
 public class Sout implements Executable{
 
     @Override
-    public void execute(int[] regs, int[] mem, int mar) {
+    public void execute(int[] regs, int[] mem, int mar, boolean trace) {
          // SOUT
                 // console << MEM[AC]
                 int addr = regs[AC];

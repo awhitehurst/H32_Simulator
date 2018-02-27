@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package instructures;
+package instructions;
 
 import h32.Executable;
 
@@ -13,7 +13,7 @@ import h32.Executable;
  */
 public class Addy implements Executable {
     
-    public void execute(int[] regs, int[] mem, int mar){
+    public void execute(int[] regs, int[] mem, int mar, boolean trace){
     
     // ADDY X
     // AC = AC + MEM[X] + CY;CY = carry

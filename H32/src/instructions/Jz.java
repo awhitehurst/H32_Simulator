@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package instructures;
+package instructions;
 
 import h32.Executable;
 
@@ -11,13 +11,13 @@ import h32.Executable;
  *
  * @author Alex
  */
-public class Jz implements Executable{
+public class Jz implements Executable {
 
     @Override
-    public void execute(int[] regs, int[] mem, int mar) {
-                        if (regs[AC] == 0) {
-                    regs[PC] = mar;
-                }
+    public void execute(int[] regs, int[] mem, int mar, boolean trace) {
+        if (regs[AC] == 0) {
+            regs[PC] = mar;
+        }
     }
-    
+
 }

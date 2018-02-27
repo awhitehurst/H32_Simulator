@@ -6,7 +6,6 @@
 package instructions;
 
 import h32.Executable;
-import h32.H32;
 
 /**
  *
@@ -18,7 +17,7 @@ public class Ittb implements Executable{
        
 
     @Override
-    public void execute(int[] regs, int[] mem, int mar) {
+    public void execute(int[] regs, int[] mem, int mar, boolean trace) {
            regs[TTB] = mar;
     }
        

@@ -14,7 +14,7 @@ import h32.Executable;
 public class Shra implements Executable {
 
     @Override
-    public void execute(int[] regs, int[] mem, int mar) {
+    public void execute(int[] regs, int[] mem, int mar, boolean trace) {
                 // SHRA X
                 // AC = AC >> X (inject sign)
                 int mask = 0;

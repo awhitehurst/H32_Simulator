@@ -10,7 +10,7 @@ import h32.Executable;
 public class Sti implements Executable {
 
     @Override
-    public void execute(int[] regs, int[] mem, int mar) {
+    public void execute(int[] regs, int[] mem, int mar, boolean trace) {
        mem[regs[AC] & 0xFFFFFF] = mem[regs[SP]++];
     }
     

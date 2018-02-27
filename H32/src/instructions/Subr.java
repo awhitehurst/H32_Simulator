@@ -14,7 +14,7 @@ import h32.Executable;
 public class Subr implements Executable {
 
     @Override
-    public void execute(int[] regs, int[] mem, int mar) {
+    public void execute(int[] regs, int[] mem, int mar, boolean trace) {
         // SUBR S
         // AC = AC - MEM[BP + S]
         int OFFSET = 0;

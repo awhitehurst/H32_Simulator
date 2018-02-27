@@ -15,7 +15,7 @@ import h32.H32;
 public class Halt implements Executable{
 
     @Override
-    public void execute(int[] regs, int[] mem, int mar) {
+    public void execute(int[] regs, int[] mem, int mar, boolean trace) {
      
                }
 

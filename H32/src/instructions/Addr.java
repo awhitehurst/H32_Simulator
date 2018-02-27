@@ -16,7 +16,7 @@ public class Addr implements Executable {
 
 
     @Override
-    public void execute(int[] regs, int[] mem, int mar) {
+    public void execute(int[] regs, int[] mem, int mar, boolean trace) {
                     int OFFSET = 0;
                     long result = (long) regs[AC] + (long) mem[regs[BP] + OFFSET];
                 regs[AC] = (int) result;

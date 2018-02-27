@@ -17,7 +17,7 @@ public class And implements Executable{
                
 
     @Override
-    public void execute(int[] regs, int[] mem, int mar) {
+    public void execute(int[] regs, int[] mem, int mar, boolean trace) {
          regs[AC] = regs[AC] & mem[mar];
          
     }

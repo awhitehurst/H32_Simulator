@@ -14,7 +14,7 @@ import h32.Executable;
 public class Ucmp implements Executable{
 
     @Override
-    public void execute(int[] regs, int[] mem, int mar) {
+    public void execute(int[] regs, int[] mem, int mar, boolean trace) {
          // UCMP
                 throw new java.lang.UnsupportedOperationException();
     }

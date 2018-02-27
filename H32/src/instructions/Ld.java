@@ -17,7 +17,7 @@ public class Ld implements Executable {
      * @param mem
      * @param mar
      */
-    public void execute(int[] regs, int[] mem, int mar) {
+    public void execute(int[] regs, int[] mem, int mar,boolean trace) {
         regs[AC] = mem[mar];
     }
 

@@ -14,7 +14,7 @@ import h32.Executable;
 public class Sect implements Executable {
 
     @Override
-    public void execute(int[] regs, int[] mem, int mar) {
+    public void execute(int[] regs, int[] mem, int mar, boolean trace) {
         // SECT X
         // CT = MEM[X];
         regs[CT] = mem[mar];

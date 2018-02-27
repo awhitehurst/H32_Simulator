@@ -12,7 +12,7 @@ public class St implements Executable {
     private boolean trace;
     
     @Override
-    public void execute(int[] regs, int[] mem, int mar) {
+    public void execute(int[] regs, int[] mem, int mar, boolean trace) {
           // ST X
                 // MEM[x] = AC
                 long old = mem[mar];

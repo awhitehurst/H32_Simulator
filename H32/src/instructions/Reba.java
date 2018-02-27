@@ -14,7 +14,7 @@ import h32.Executable;
 public class Reba implements Executable{
 
     @Override
-    public void execute(int[] regs, int[] mem, int mar) {
+    public void execute(int[] regs, int[] mem, int mar, boolean trace) {
         // REBA
                 // SP = BP;BP=MEM[SP++]
                 regs[SP] = regs[BP];

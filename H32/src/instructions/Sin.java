@@ -14,7 +14,7 @@ import h32.Executable;
 public class Sin implements Executable {
 
     @Override
-    public void execute(int[] regs, int[] mem, int mar) {
+    public void execute(int[] regs, int[] mem, int mar, boolean trace) {
         // SIN
         // MEM[AC] << console
         String input = console.nextLine();

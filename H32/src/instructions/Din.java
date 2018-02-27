@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package instructures;
+package instructions;
 
 import h32.Executable;
-import static java.lang.System.console;
+
 
 
 
@@ -18,7 +18,7 @@ public class Din implements Executable {
                
 
     @Override
-    public void execute(int[] regs, int[] mem, int mar) {
+    public void execute(int[] regs, int[] mem, int mar, boolean trace) {
         regs[AC] = console.nextInt();
     }
 }

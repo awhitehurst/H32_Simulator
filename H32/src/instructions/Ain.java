@@ -15,7 +15,7 @@ import h32.H32;
 public class Ain implements Executable{
 
     @Override
-    public void execute(int[] regs, int[] mem, int mar) {
+    public void execute(int[] regs, int[] mem, int mar, boolean trace) {
      // AIN
                 // AC << (char) console
               

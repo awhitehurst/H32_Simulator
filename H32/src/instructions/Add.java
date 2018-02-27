@@ -21,7 +21,7 @@ public class Add implements Executable {
       // case 0x02:
 
     @Override
-    public void execute(int[] regs, int[] mem, int mar) {
+    public void execute(int[] regs, int[] mem, int mar, boolean trace) {
 
         //AC = AC + mem{X}; CY = CARRY
         int old = regs[AC];

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package instructures;
+package instructions;
 
 import h32.Executable;
 import static java.lang.System.console;
@@ -15,7 +15,7 @@ import static java.lang.System.console;
 public class Hin implements Executable {
 
     @Override
-    public void execute(int[] regs, int[] mem, int mar) {
+    public void execute(int[] regs, int[] mem, int mar, boolean trace) {
         String hexInput = console.next("[0-9A-Fa-f]+").toUpperCase();
                 int hexNumber = 0;
                 for (int i = 0; i < hexInput.length(); ++i) {
