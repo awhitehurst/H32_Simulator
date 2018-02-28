@@ -7,32 +7,32 @@ import org.junit.Test;
 
 /**
  *
- * @author Whitehurst
+ * @author Joshua
  */
-public class StTest implements RegisterManipulator {
-    
+public class EsbaTest implements RegisterManipulator {
+
     private final H32 sim = new H32();
-    private final St inst = new St();
-    
-    public StTest() {
+    private final Esba inst = new Esba();
+
+    public EsbaTest() {
+
     }
 
     /**
-     * Test of execute method, of class St.
+     * Test of execute method, of class Esba.
      */
     @Test
     public void testExecute() {
         System.out.println("execute");
-        int [] regs = sim.getRegs();
-        int [] mem=sim.getMem();
-        regs[AC] = 1;
+        int[] regs = sim.getRegs();
+        int[] mem = sim.getMem();
+        regs[SP] = 4;
+        regs[BP] = 2;
         int mar = 0;
         boolean trace = false;
-        St instance = new St();
+        Esba instance = inst;
         instance.execute(regs, mem, mar, trace);
-        int result = mem[0];
-        assertEquals(result, 1);
-        
+        int result = regs[BP];
+        assertEquals(result, 3);
     }
-    
 }

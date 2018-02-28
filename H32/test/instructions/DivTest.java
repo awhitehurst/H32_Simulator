@@ -7,32 +7,32 @@ import org.junit.Test;
 
 /**
  *
- * @author Whitehurst
+ * @author Joshua
  */
-public class StTest implements RegisterManipulator {
-    
+public class DivTest implements RegisterManipulator {
+
     private final H32 sim = new H32();
-    private final St inst = new St();
-    
-    public StTest() {
+    private final Div inst = new Div();
+
+    public DivTest() {
+
     }
 
     /**
-     * Test of execute method, of class St.
+     * Test of execute method, of class Div.
      */
     @Test
     public void testExecute() {
         System.out.println("execute");
-        int [] regs = sim.getRegs();
-        int [] mem=sim.getMem();
-        regs[AC] = 1;
+        int[] regs = sim.getRegs();
+        int[] mem = sim.getMem();
+        regs[AC] = 16;        
         int mar = 0;
+        mem[mar] = 8;
         boolean trace = false;
-        St instance = new St();
+        Div instance = inst;
         instance.execute(regs, mem, mar, trace);
-        int result = mem[0];
-        assertEquals(result, 1);
-        
+        int result = regs[AC];
+        assertEquals(result, 2);
     }
-    
 }

@@ -15,6 +15,7 @@ public class Bcpy implements Executable{
         // temp = mar;while(ct--){mem[ac++] = mem[temp++]
         while(regs[CT]>0){
             mem[regs[AC]++] = mem[mar++];
+            regs[CT]--;
         }
     }
 }
