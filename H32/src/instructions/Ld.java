@@ -1,8 +1,6 @@
 package instructions;
 
-
 import h32.Executable;
-
 
 /**
  * The load instruction. Instruction form: LD X <br>Results: AC = MEM[x]
@@ -13,11 +11,14 @@ public class Ld implements Executable {
 
     /**
      * Instruction form: LD X <br>Results: AC = MEM[x]
+     *
      * @param regs
      * @param mem
      * @param mar
+     * @param trace
      */
-    public void execute(int[] regs, int[] mem, int mar,boolean trace) {
+    @Override
+    public void execute(int[] regs, int[] mem, int mar, boolean trace) {
         regs[AC] = mem[mar];
     }
 
