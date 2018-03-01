@@ -64,7 +64,7 @@ public class H32 {
     }
 
     public void init() {
-        REG[SP] = 0x100000;
+        REG[SP] = 0x1000;
     }
 
     public void step() {
