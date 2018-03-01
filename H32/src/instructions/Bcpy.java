@@ -6,14 +6,12 @@
 package instructions;
 
 import h32.Executable;
-import h32.H32;
 
 /**
  *
  * @author pcctoo
  */
-public class Bcpy implements Executable{
-               
+public class Bcpy implements Executable {
 
     @Override
     public void execute(int[] regs, int[] mem, int mar, boolean trace) {
