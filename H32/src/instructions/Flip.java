@@ -8,10 +8,9 @@ import h32.Executable;
  */
 public class Flip implements Executable {
     // FLIP
-           
 
     @Override
     public void execute(int[] regs, int[] mem, int mar, boolean trace) {
-             regs[AC] = ~regs[AC];
+        regs[AC] = ~regs[AC];
     }
 }
