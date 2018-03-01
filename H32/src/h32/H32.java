@@ -24,10 +24,27 @@ public class H32 {
     private boolean trace;
     private Scanner console;
     private int[] REC;
-    private Executable[] inst = {new Ld(),new St(),new Add(),new Sub(),new Ldr(),new Str(),new Addr(),new Subr(),new Ldc(), new Ja(),new Jzop(), new Jn(),new Jz(), new Jnz(),new Call(),new Ret(), new Ldi(), new Sti(), new Push(),new Pop(),new Aloc(), new Dloc(),new Swap(),new Addc(), new Subc(),new Esba(),new Reba(),new Cora(),new Scpm(), new Ucmp(), new Shll(), new Shrl(), new Shra(),new Muls(),new Mult(),new Div(), new Rem(),new Addy(), new Or(),new Xor(), new And(), new Flip(), new Cali(), new Sect(),new Dect(), new Sodd(), new Bpbp(), new Pobp(), new Pbp(),new Bcpy(),new Sysc(), new Exit(), new Ittb(), new Iitb(),new Enbi(), new Disi(), new Uout(), new Sin(), new Sout(), new Hin(), new Hout(), new Ain(), new Aout(), new Din(), new Dout(), new Halt()};
+    private Executable[] inst = {
+        new Ld(),new St(),new Add(),new Sub(),
+        new Ldr(),new Str(),new Addr(),new Subr(),
+        new Ldc(), new Ja(),new Jzop(), new Jn(),
+        new Jz(), new Jnz(),new Call(),new Ret(), 
+        new Ldi(), new Sti(), new Push(),new Pop(),
+        new Aloc(), new Dloc(),new Swap(),new Addc(), 
+        new Subc(),new Esba(),new Reba(),new Cora(),
+        new Scpm(), new Ucmp(), new Shll(), new Shrl(), 
+        new Shra(),new Muls(),new Mult(),new Div(), 
+        new Rem(),new Addy(), new Or(),new Xor(), 
+        new And(), new Flip(), new Cali(), new Sect(),
+        new Dect(), new Sodd(), new Bpbp(), new Pobp(), 
+        new Pbp(),new Bcpy(),new Sysc(), new Exit(), 
+        new Ittb(), new Iitb(),new Enbi(), new Disi(), 
+        new Uout(), new Sin(), new Sout(), new Hin(), 
+        new Hout(), new Ain(), new Aout(), new Din(), 
+        new Dout(), new Halt()};
 
     public H32() {
-        console = new Scanner(System.in);
+  //      console = new Scanner(System.in);
         REG = new int[32];
         MEM = new int[0x1000000];
         REG[ZERO] = 0;
@@ -35,6 +52,14 @@ public class H32 {
         REG[XM] = 0xFFFFFF;
         REG[YM] = 0xFFFF;
         REG[ZM] = 0XFF;
+    }
+    
+    public int [] getRegs(){
+        return REG;
+    }
+    
+    public int[] getMem(){
+        return MEM;
     }
 
     public void init() {

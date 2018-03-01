@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package instructions;
 
 import h32.Executable;
@@ -15,6 +10,11 @@ public class Bcpy implements Executable {
 
     @Override
     public void execute(int[] regs, int[] mem, int mar, boolean trace) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        // BCPY X
+        // temp = mar;while(ct--){mem[ac++] = mem[temp++]
+        while(regs[CT]>0){
+            mem[regs[AC]++] = mem[mar++];
+            regs[CT]--;
+        }
     }
 }
