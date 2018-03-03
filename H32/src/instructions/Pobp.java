@@ -11,7 +11,9 @@ public class Pobp implements Executable {
 
     @Override
     public void execute(int[] regs, int[] mem, int mar, boolean trace) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        // POBP: pop BP
+        // REG[BP] = MEM[REG[SP]++]
+        regs[BP] = mem[regs[BP]++];
     }
     
 }

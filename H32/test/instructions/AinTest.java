@@ -8,8 +8,7 @@ package instructions;
 import h32.H32;
 import h32.RegisterManipulator;
 import static h32.RegisterManipulator.AC;
-import static h32.RegisterManipulator.BP;
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 import org.junit.Test;
 
 /**
@@ -30,16 +29,8 @@ public class AinTest implements RegisterManipulator {
      */
     @Test
     public void testExecute() {
-        System.out.println("execute");
-        int[] regs = sim.getRegs();
-        int[] mem = sim.getMem();
-        int mar = 0;
-        boolean trace = false;
-        Ain instance = inst;
-        instance.execute(regs, mem, mar, trace);
-        int result = regs[AC];
-        System.out.println(result);
-        // assertEquals(result,0);
+        System.out.println("execute Ain");
+        fail("Test manually");
     }
 
 }
