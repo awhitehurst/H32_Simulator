@@ -2,8 +2,8 @@ package instructions;
 
 import h32.H32;
 import h32.RegisterManipulator;
-import static org.junit.Assert.assertEquals;
 import org.junit.Test;
+
 
 /**
  *

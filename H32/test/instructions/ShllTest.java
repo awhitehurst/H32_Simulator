@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package instructions;
 
 import h32.H32;
@@ -24,7 +20,7 @@ public class ShllTest implements RegisterManipulator {
     }
     
     /**
-     * Test of execute method, of class Ret.
+     * Test of execute method, of class shill.
      */
     @Test
     public void testExecute(){
