@@ -32,16 +32,18 @@ public class BcpyTest implements RegisterManipulator {
         System.out.println("execute");
         int[] regs = sim.getRegs();
         int[] mem = sim.getMem();
+        mem[0]=1;
+        mem[1]=2;
+        mem[2]=3;
         regs[CT]= 3;
         regs[AC] = 4;
         int mar = 0;
-        mem[mar] = 4;
         boolean trace = false;
         Bcpy instance = inst;
         instance.execute(regs, mem, mar, trace);
-        int result = mem[regs[AC]];
-        System.out.println(result);
-        assertEquals(result, null);
+        assertEquals(mem[4], 1);
+        assertEquals(mem[5], 2);
+        assertEquals(mem[6], 3);
     }
 
 }
