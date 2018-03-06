@@ -14,10 +14,6 @@ public class CaliTest implements RegisterManipulator {
     private final H32 sim = new H32();
     private final Cali inst = new Cali();
 
-    public CaliTest() {
-
-    }
-
     /**
      * Test of execute method, of class cali.
      */
@@ -31,7 +27,6 @@ public class CaliTest implements RegisterManipulator {
         boolean trace = false;
         Cali instance = inst;
         instance.execute(regs, mem, mar, trace);
-        int result = regs[AC];
         assertEquals(regs[AC], regs[PC]);
     }
 }

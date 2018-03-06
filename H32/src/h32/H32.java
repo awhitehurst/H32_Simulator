@@ -33,7 +33,7 @@ public class H32 {
         new Ldi(), new Sti(), new Push(),new Pop(),
         new Aloc(), new Dloc(),new Swap(),new Addc(), 
         new Subc(),new Esba(),new Reba(),new Cora(),
-        new Scpm(), new Ucmp(), new Shll(), new Shrl(), 
+        new Scmp(), new Ucmp(), new Shll(), new Shrl(), 
         new Shra(),new Muls(),new Mult(),new Div(), 
         new Rem(),new Addy(), new Or(),new Xor(), 
         new And(), new Flip(), new Cali(), new Sect(),
@@ -42,7 +42,7 @@ public class H32 {
         new Ittb(), new Iitb(),new Enbi(), new Disi(), 
         new Uout(), new Sin(), new Sout(), new Hin(), 
         new Hout(), new Ain(), new Aout(), new Din(), 
-        new Dout(), new Halt()};
+        new Dout(), };
 
     public H32() {
   //      console = new Scanner(System.in);
@@ -53,6 +53,7 @@ public class H32 {
         REG[XM] = 0xFFFFFF;
         REG[YM] = 0xFFFF;
         REG[ZM] = 0XFF;
+        REG[SP] = 0x100000;
     }
     
     public int [] getRegs(){
