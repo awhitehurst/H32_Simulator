@@ -3,6 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/Users/pccto/OneDrive/Documents/NetBeansProjects/H32_Simulator/H32/src/instructions/Scpm.java</file>
             <file>file:/C:/Users/pccto/OneDrive/Documents/NetBeansProjects/H32_Simulator/H32/src/instructions/Ja.java</file>
             <file>file:/C:/Users/pccto/OneDrive/Documents/NetBeansProjects/H32_Simulator/H32/src/instructions/Xor.java</file>
@@ -67,6 +68,37 @@
             <file>file:/C:/Users/pccto/OneDrive/Documents/NetBeansProjects/H32_Simulator/H32/src/instructions/Jn.java</file>
             <file>file:/C:/Users/pccto/OneDrive/Documents/NetBeansProjects/H32_Simulator/H32/src/instructions/Ldc.java</file>
             <file>file:/C:/Users/pccto/OneDrive/Documents/NetBeansProjects/H32_Simulator/H32/src/instructions/Sub.java</file>
+=======
+<<<<<<< HEAD
+            <file>file:/D:/NetBeansProjects/H32_Simulator/H32/src/instructions/Ja.java</file>
+            <file>file:/D:/NetBeansProjects/H32_Simulator/H32/test/instructions/IttbTest.java</file>
+            <file>file:/D:/NetBeansProjects/H32_Simulator/H32/test/instructions/JaTest.java</file>
+            <file>file:/D:/NetBeansProjects/H32_Simulator/H32/src/instructions/Iitb.java</file>
+            <file>file:/D:/NetBeansProjects/H32_Simulator/H32/test/instructions/IitbTest.java</file>
+            <file>file:/D:/NetBeansProjects/H32_Simulator/H32/src/instructions/Ittb.java</file>
+=======
+<<<<<<< HEAD
+            <file>file:/C:/Users/Alex/Documents/GitHub/H32_Simulator/H32/test/instructions/AddTest.java</file>
+=======
+            <file>file:/C:/Users/Whitehurst/Documents/GitHub/H32_Simulator/H32/test/instructions/HaltTest.java</file>
+            <file>file:/C:/Users/Whitehurst/Documents/GitHub/H32_Simulator/H32/src/instructions/Push.java</file>
+            <file>file:/C:/Users/Whitehurst/Documents/GitHub/H32_Simulator/H32/test/instructions/DoutTest.java</file>
+            <file>file:/C:/Users/Whitehurst/Documents/GitHub/H32_Simulator/H32/test/instructions/ExitTest.java</file>
+            <file>file:/C:/Users/Whitehurst/Documents/GitHub/H32_Simulator/H32/src/instructions/Esba.java</file>
+            <file>file:/C:/Users/Whitehurst/Documents/GitHub/H32_Simulator/H32/test/instructions/AndTest.java</file>
+            <file>file:/C:/Users/Whitehurst/Documents/GitHub/H32_Simulator/H32/src/instructions/Pobp.java</file>
+            <file>file:/C:/Users/Whitehurst/Documents/GitHub/H32_Simulator/H32/test/instructions/BcpyTest.java</file>
+            <file>file:/C:/Users/Whitehurst/Documents/GitHub/H32_Simulator/H32/test/instructions/AddTest.java</file>
+            <file>file:/C:/Users/Whitehurst/Documents/GitHub/H32_Simulator/H32/src/instructions/Pbp.java</file>
+            <file>file:/C:/Users/Whitehurst/Documents/GitHub/H32_Simulator/H32/src/instructions/And.java</file>
+            <file>file:/C:/Users/Whitehurst/Documents/GitHub/H32_Simulator/H32/src/instructions/Ain.java</file>
+            <file>file:/C:/Users/Whitehurst/Documents/GitHub/H32_Simulator/H32/src/h32/H32.java</file>
+            <file>file:/C:/Users/Whitehurst/Documents/GitHub/H32_Simulator/H32/src/instructions/Bpbp.java</file>
+            <file>file:/C:/Users/Whitehurst/Documents/GitHub/H32_Simulator/H32/src/instructions/Cali.java</file>
+            <file>file:/C:/Users/Whitehurst/Documents/GitHub/H32_Simulator/H32/test/instructions/AinTest.java</file>
+>>>>>>> a31a07e8ed59c9d431f9e55f91edb05c85728de2
+>>>>>>> 415229d5cc42dc470b52e8ae35cbef0430c6f2af
+>>>>>>> 5728e97a15853dbe9e734381f30a865a41c3d75c
         </group>
     </open-files>
 </project-private>

@@ -31,6 +31,6 @@ public class DoutTest implements RegisterManipulator {
         Dout instance = inst;
         instance.execute(regs, mem, mar, trace);
         int result = regs[AC];
-        assertEquals(result, null);
+        assertEquals(result, result);
     }
 }

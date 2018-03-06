@@ -26,11 +26,12 @@ public class CaliTest implements RegisterManipulator {
         System.out.println("execute");
         int[] regs = sim.getRegs();
         int[] mem = sim.getMem();
+        regs[AC] = 5;
         int mar = 0;
         boolean trace = false;
         Cali instance = inst;
         instance.execute(regs, mem, mar, trace);
         int result = regs[AC];
-        assertEquals(result, null);
+        assertEquals(regs[AC], regs[PC]);
     }
 }

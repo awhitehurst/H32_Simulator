@@ -1,5 +1,6 @@
 package h32;
 
+import instructions.Exit;
 import instructions.*;
 import java.io.DataInputStream;
 import java.io.File;
@@ -63,7 +64,7 @@ public class H32 {
     }
 
     public void init() {
-        REG[SP] = 0x100000;
+        REG[SP] = 0x1000;
     }
 
     public void step() {
