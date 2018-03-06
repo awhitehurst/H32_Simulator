@@ -19,7 +19,7 @@ public class CaliTest implements RegisterManipulator {
     }
 
     /**
-     * Test of execute method, of class "".
+     * Test of execute method, of class cali.
      */
     @Test
     public void testExecute() {

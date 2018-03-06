@@ -19,7 +19,7 @@ public class CoraTest implements RegisterManipulator {
     }
 
     /**
-     * Test of execute method, of class "".
+     * Test of execute method, of class cora.
      */
     @Test
     public void testExecute() {
