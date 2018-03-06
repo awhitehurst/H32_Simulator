@@ -12,23 +12,23 @@ import org.junit.Test;
 
 /**
  *
- * @author Joshua
+ * @author Joshua Neilson
  */
-public class AinTest implements RegisterManipulator {
+public class HinTest implements RegisterManipulator{
 
     private final H32 sim = new H32();
-    private final Ain inst = new Ain();
+    private final Hin inst = new Hin();
 
-    public AinTest() {
+    public HinTest() {
 
     }
 
     /**
-     * Test of execute method, of class Ain.
+     * Test of execute method, of class Hin.
      */
     @Test
     public void testExecute() {
-        System.out.println("execute Ain");
+        System.out.println("execute Hin");
         fail("Test manually");
     }
 
