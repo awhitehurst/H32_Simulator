@@ -14,10 +14,6 @@ public class EsbaTest implements RegisterManipulator {
     private final H32 sim = new H32();
     private final Esba inst = new Esba();
 
-    public EsbaTest() {
-
-    }
-
     /**
      * Test of execute method, of class Esba.
      */
@@ -33,6 +29,6 @@ public class EsbaTest implements RegisterManipulator {
         Esba instance = inst;
         instance.execute(regs, mem, mar, trace);
         int result = regs[BP];
-        assertEquals(result, 3);
+        assertEquals(regs[BP],regs[SP]);
     }
 }

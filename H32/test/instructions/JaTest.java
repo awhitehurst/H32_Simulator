@@ -9,18 +9,27 @@ import org.junit.Test;
 
 /**
  *
+<<<<<<< HEAD
  * @author Alex
  */
 public class JaTest implements RegisterManipulator {
 
+=======
+ * @author Joshua Neilson
+ */
+public class JaTest implements RegisterManipulator{
+>>>>>>> b39c5949ce26b49842d173979147f9cd47172204
 
     
     private final H32 sim = new H32();
     private final Ja inst = new Ja();
     
+<<<<<<< HEAD
     public JaTest(){
         
     }
+=======
+>>>>>>> b39c5949ce26b49842d173979147f9cd47172204
     
     @Test
     public void testExecute(){

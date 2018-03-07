@@ -3,6 +3,7 @@ package instructions;
 import h32.H32;
 import h32.RegisterManipulator;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 import org.junit.Test;
 
 /**
@@ -24,15 +25,7 @@ public class AoutTest implements RegisterManipulator {
     @Test
     public void testExecute() {
         System.out.println("execute");
-        int[] regs = sim.getRegs();
-        int[] mem = sim.getMem();
-        int mar = 0;
-        boolean trace = false;
-        Aout instance = inst;
-        instance.execute(regs, mem, mar, trace);
-        int result = regs[AC];
-        System.out.println(result);
-        assertEquals(result, null);
+        fail("Test manually");
     }
 
 }

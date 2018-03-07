@@ -28,11 +28,11 @@ public class BpbpTest implements RegisterManipulator {
         int[] regs = sim.getRegs();
         int[] mem = sim.getMem();        
         int mar = 0;        
-        boolean trace = false;
         Bpbp instance = inst;
-        instance.execute(regs, mem, mar, trace);
-        int result = regs[AC];        
-        assertEquals(result, null);
+        int expValue =mem[regs[BP]];
+        instance.execute(regs, mem, mar, false);
+        int result = regs[BP];        
+        assertEquals(result, expValue);
 
     }
 
