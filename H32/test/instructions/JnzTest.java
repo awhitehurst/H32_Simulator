@@ -21,13 +21,14 @@ public class JnzTest implements RegisterManipulator {
         System.out.println("execute");
         int [] regs = sim.getRegs();
         int [] mem = sim.getMem();
-        mem [regs[SP]] = 5;
+        regs[AC] = 3;
+        int mar = 1;
         boolean trace = false;
        Jnz instance = inst;
-        instance.execute(regs,mem,PC,trace);
+        instance.execute(regs,mem,mar,trace);
         int result = regs[PC];
         System.out.println(result);
-        assertEquals(result,5);
+        assertEquals(result,1);
         
     }
     
