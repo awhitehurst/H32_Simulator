@@ -3,10 +3,18 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/D:/NetBeansProjects/H32_Simulator/H32/src/instructions/Swap.java</file>
             <file>file:/D:/NetBeansProjects/H32_Simulator/H32/src/instructions/Scmp.java</file>
             <file>file:/D:/NetBeansProjects/H32_Simulator/H32/src/h32/H32.java</file>
             <file>file:/D:/NetBeansProjects/H32_Simulator/H32/src/instructions/Ucmp.java</file>
+=======
+            <file>file:/C:/Users/Alex/Documents/GitHub/H32_Simulator/H32/src/instructions/Ucmp.java</file>
+            <file>file:/C:/Users/Alex/Documents/GitHub/H32_Simulator/H32/test/instructions/OrTest.java</file>
+            <file>file:/C:/Users/Alex/Documents/GitHub/H32_Simulator/H32/src/instructions/Sout.java</file>
+            <file>file:/C:/Users/Alex/Documents/GitHub/H32_Simulator/H32/src/instructions/Esba.java</file>
+            <file>file:/C:/Users/Alex/Documents/GitHub/H32_Simulator/H32/src/instructions/Sodd.java</file>
+>>>>>>> 1e62aa02c5b820fa482ccbfd8a2abe995109bfc3
         </group>
     </open-files>
 </project-private>
