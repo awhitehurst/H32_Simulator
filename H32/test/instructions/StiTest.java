@@ -5,36 +5,34 @@ import h32.H32;
 import h32.RegisterManipulator;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
-
 /**
  *
- * @author Adrian Sanchez
+ * @author pcctoo
  */
-public class ShraTest implements RegisterManipulator {
-    
+public class StiTest implements RegisterManipulator{
     private final H32 sim = new H32();
-    private final Shll inst = new Shll();
+    private final Sti inst = new Sti();
     
-    public ShraTest(){
+    public StiTest(){
         
     }
     
     /**
-     * Test of execute method, of class shra
+     * Test of execute method, of class sti.
      */
     @Test
     public void testExecute(){
         System.out.println("execute");
         int [] regs = sim.getRegs();
         int [] mem = sim.getMem();
-        regs[AC] = 0;
+        mem [regs[SP]] = 5;
         boolean trace = false;
-        Shll instance = inst;
-        instance.execute(regs,mem,AC,trace);
-        int result = regs[AC];
+        Sti instance = inst;
+        instance.execute(regs,mem,PC,trace);
+        int result = regs[PC];
         System.out.println(result);
-        assertEquals(result,0);
+        assertEquals(result,5);
         
     }
     
-} 
+}

@@ -15,10 +15,7 @@ public class ExitTest implements RegisterManipulator {
     
     private final H32 sim = new H32();
     private final Exit inst = new Exit();
-    
-    public ExitTest(){
-        
-    }
+
     
     /**
      * Test of execute method, of class Exit.
@@ -28,15 +25,11 @@ public class ExitTest implements RegisterManipulator {
         System.out.println("execute");
         int[] regs = sim.getRegs();
         int[] mem = sim.getMem();
-        regs[AC] = 20;
-        regs[CY] = 1;
-        int mar = 3;
-        mem[mar] = 6;
+        int mar = 0;
         boolean trace = false;
         Exit instance = inst;
         instance.execute(regs, mem, mar, trace);
         int result = regs[AC];
-        System.out.println(result);
-        assertEquals(result, 27);
+        assertEquals(result, 0);
     }
 }

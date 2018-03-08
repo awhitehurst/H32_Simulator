@@ -19,7 +19,7 @@ public class CallTest implements RegisterManipulator {
     }
 
     /**
-     * Test of execute method, of class "".
+     * Test of execute method, of class call.
      */
     @Test
     public void testExecute() {

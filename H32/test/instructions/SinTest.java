@@ -8,24 +8,23 @@ import org.junit.Test;
 
 /**
  *
- * @author Joshua
+ * @author pcctoo
  */
-public class AoutTest implements RegisterManipulator {
+public class SinTest implements RegisterManipulator {
 
     private final H32 sim = new H32();
-    private final Aout inst = new Aout();
+    private final Sin inst = new Sin();
 
-    public AoutTest() {
+    public SinTest() {
 
     }
 
     /**
-     * Test of execute method, of class Aout.
+     * a test for the sin opcode
      */
     @Test
     public void testExecute() {
         System.out.println("execute");
         fail("Test manually");
     }
-
 }
