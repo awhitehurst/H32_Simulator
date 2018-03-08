@@ -14,29 +14,29 @@ import org.junit.Test;
  *
  * @author Joshua Neilson
  */
-public class JaTest implements RegisterManipulator{
+public class JnTest implements RegisterManipulator{
     
     private final H32 sim = new H32();
-    private final Ja inst = new Ja();
+    private final Jn inst = new Jn();
     
-    public JaTest(){
+    public JnTest(){
         
     }
     
     /**
-     * Test of execute method, of class Ja.
+     * Test of execute method, of class Jn.
      */
-    
     @Test
     public void testExecute(){
-        System.out.println("execute Ja");
+        System.out.println("execute Jn");
         int [] mem = sim.getMem();
         int [] regs = sim.getRegs();
-        int mar = 10;
+        int mar = 0;
+        regs[AC] = -1;
         boolean trace = false;
-        Ja instance = inst;
+        Jn instance = inst;
         instance.execute(regs, mem, mar, trace);
-        assertEquals(regs[PC],10);
+        assertEquals(regs[PC],0);
     }
     
 }

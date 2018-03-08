@@ -1,36 +1,43 @@
-
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package instructions;
 
 import h32.H32;
 import h32.RegisterManipulator;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
+
 /**
  *
- * @author pcctoo
+ * @author Joshua Neilson
  */
 public class JnzTest implements RegisterManipulator {
-     private final H32 sim = new H32();
+
+    private final H32 sim = new H32();
     private final Jnz inst = new Jnz();
-    
-    public JnzTest(){
-        //this is a test of the jnz opcode
+
+    public JnzTest() {
+
     }
- @Test
-    public void testExecute(){
-        System.out.println("execute");
-        int [] regs = sim.getRegs();
-        int [] mem = sim.getMem();
-        regs[AC] = 3;
-        int mar = 1;
+
+    /**
+     * Test of execute method, of class Jnz.
+     */
+    @Test
+    public void testExecute() {
+        System.out.println("execute Jnz");
+        int[] mem = sim.getMem();
+        int[] regs = sim.getRegs();
+        int mar = 0;
+        regs[AC] = 1;
         boolean trace = false;
-       Jnz instance = inst;
-        instance.execute(regs,mem,mar,trace);
-        int result = regs[PC];
-        System.out.println(result);
-        assertEquals(result,1);
-        
+        Jnz instance = inst;
+        instance.execute(regs, mem, mar, trace);
+        int results = regs[PC];
+        assertEquals(results, 0);
     }
-    
+
 }
-     
