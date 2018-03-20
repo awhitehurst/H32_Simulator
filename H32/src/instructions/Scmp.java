@@ -12,8 +12,9 @@ public class Scmp implements Executable {
     @Override
     public void execute(int[] regs, int[] mem, int mar, boolean trace) {
         // SCPM
-        // TMP = MEM[SP++]
-        throw new java.lang.UnsupportedOperationException();
+        // AC = AC - MEM[MAR]
+        regs[AC] = regs[AC]-mem[mar];
+        
     }
     
 }
