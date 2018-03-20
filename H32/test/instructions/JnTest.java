@@ -1,4 +1,3 @@
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -15,30 +14,29 @@ import org.junit.Test;
  *
  * @author Joshua Neilson
  */
-public class JnzTest implements RegisterManipulator {
-
+public class JnTest implements RegisterManipulator{
+    
     private final H32 sim = new H32();
-    private final Jnz inst = new Jnz();
-
-    public JnzTest() {
-
+    private final Jn inst = new Jn();
+    
+    public JnTest(){
+        
     }
-
+    
     /**
-     * Test of execute method, of class Jnz.
+     * Test of execute method, of class Jn.
      */
     @Test
-    public void testExecute() {
-        System.out.println("execute Jnz");
-        int[] mem = sim.getMem();
-        int[] regs = sim.getRegs();
+    public void testExecute(){
+        System.out.println("execute Jn");
+        int [] mem = sim.getMem();
+        int [] regs = sim.getRegs();
         int mar = 0;
-        regs[AC] = 1;
+        regs[AC] = -1;
         boolean trace = false;
-        Jnz instance = inst;
+        Jn instance = inst;
         instance.execute(regs, mem, mar, trace);
-        int results = regs[PC];
-        assertEquals(results, 0);
+        assertEquals(regs[PC],0);
     }
-
+    
 }

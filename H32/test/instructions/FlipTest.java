@@ -32,7 +32,7 @@ public class FlipTest implements RegisterManipulator {
         boolean trace = false;
         Flip instance = inst;
         instance.execute(regs, mem, mar, trace);
-        int result = regs[AC];
+        int result = ~ regs[AC];
         System.out.println(result);
         assertEquals(result, null);
     }
