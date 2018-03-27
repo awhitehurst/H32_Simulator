@@ -3,3 +3,5 @@
 /H32/build/
 *.xml
 *.class
+*.properties
+
