@@ -5,3 +5,5 @@
 *.class
 *.properties
 
+H32/nbproject/private/private.properties
+H32/nbproject/private/private.xml
