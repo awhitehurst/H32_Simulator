@@ -3,4 +3,11 @@
 /H32/build/
 *.xml
 *.class
+<<<<<<< HEAD
 *.xml
+=======
+*.properties
+
+H32/nbproject/private/private.properties
+H32/nbproject/private/private.xml
+>>>>>>> 4aa94b1dc680051344a8a43a5c531d65abe1940a
