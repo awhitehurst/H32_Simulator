@@ -16,7 +16,7 @@ import java.util.logging.Logger;
  *
  * @author alan.whitehurst
  */
-public class H32 {
+public class H32 implements RegisterManipulator {
 
     private int[] REG;
     private int[] MEM;
@@ -64,6 +64,7 @@ public class H32 {
     }
 
     public void init() {
+        // this isn't right if we have multiple process
         REG[SP] = 0x1000;
     }
 
@@ -90,6 +91,7 @@ public class H32 {
             Scanner input = new Scanner(System.in);
             filename = input.nextLine();
         } else {
+            //  need to load multiple files
             filename = args[0];
         }
         File bootFile = new File(filename);
@@ -223,41 +225,8 @@ public class H32 {
         new H32().run(args);
     }
 
-    public static final byte ZERO = 0;
-    public static final byte ONE = 1;
-    public static final byte XM = 2;
-    public static final byte YM = 3;
-    public static final byte ZM = 4;
-    public static final byte MDR = 5;
-    public static final byte PC = 6;
-    public static final byte SP = 7;
-    public static final byte AC = 8;
-    public static final byte IR = 9;
-    public static final byte DC = 10;
-    public static final byte CT = 11;
-    public static final byte CY = 12;
-    public static final byte BP = 13;
-    public static final byte MB = 14;
-    public static final byte F = 15;
-    public static final byte MODE = 16;
-    public static final byte TTB = 17;
-    public static final byte ITB = 18;
-    public static final byte INTE = 19;
-    public static final byte INTX = 20;
-    public static final byte R21 = 21;
-    public static final byte R22 = 22;
-    public static final byte R23 = 23;
-    public static final byte R24 = 24;
-    public static final byte R25 = 25;
-    public static final byte R26 = 26;
-    public static final byte R27 = 27;
-    public static final byte R28 = 28;
-    public static final byte R29 = 29;
-    public static final byte R30 = 20;
-    public static final byte TMP = 31;
-
     private static final String[] regNames = {
-        "ZERO", "ONE", "XM", "YM", "ZM", "MDR", "PC", "SP", "AC", "IR", "DC", "CT", "CY", "BP", "MB", "0F",
+        "ZERO", "ONE", "XM", "YM", "ZM", "MDR", "PC", "SP", "AC", "IR", "CT", "CY", "BP", "MB", "DC", "0F",
         "MODE", "TTB", "ITB", "INTE", "INTX", "15", "16", "17", "18", "19", "1A", "1B", "1C", "1D", "1E", "1F",};
 
     private static final String[] nmemonics = {

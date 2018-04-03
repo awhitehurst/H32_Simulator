@@ -16,11 +16,11 @@ public interface RegisterManipulator {
     public static final int SP = 7;
     public static final int AC = 8;
     public static final int IR = 9;
-    public static final int DC = 10;
-    public static final int CT = 11;
-    public static final int CY = 12;
-    public static final int BP = 13;
-    public static final int MB = 14;
+    public static final int CT = 10;
+    public static final int CY = 11;
+    public static final int BP = 12;
+    public static final int MB = 13;
+    public static final int DC = 14;
     public static final int F = 15;
     public static final int MODE = 16;
     public static final int TTB = 17;
