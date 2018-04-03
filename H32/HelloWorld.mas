@@ -1,0 +1,10 @@
+; hello.mas
+;
+; Displays "Hello,world!" on the
+; console
+;
+start:	ldc msg
+		sout
+		exit 0
+msg:	dw "Hello, world!"
+		end start

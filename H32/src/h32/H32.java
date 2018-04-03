@@ -104,9 +104,11 @@ public class H32 {
             boolean header = true;
             while (data.available() > 0) {
                 int i = data.readInt();
-                if (i == (int) 'T') {
+                if (header && i == (int) 'T') {
                     header = false;
-                } else if (!header) {
+                } else if(header && (i&0x73000000)==0x73000000) {
+                    REG[PC] = i&0x00FFFFFF;
+                }else if (!header) {
                     MEM[memAddr++] = i;
                 }
             }
@@ -171,7 +173,7 @@ public class H32 {
                 case "R":
                     REG[PC] = 0x00000000;
                     REG[SP] = 0x100000;
-                    while (REG[IR] != 0xFF000000) {
+                    while (REG[IR] != 0x33000000) {
                         step();
                     }
                     break;
@@ -262,7 +264,7 @@ public class H32 {
         "LD", "ST", "ADD", "SUB", "LDR", "STR", "ADDR", "SUBR", "LDC", "JA", "JZOP", "JN", "JZ", "JNZ", "CALL", "RET",
         "LDI", "STI", "PUSH", "POP", "ALOC", "DLOC", "SWAP", "ADDC", "SUBC", "ESBA", "REBA", "CORA", "SCMP", "UCMP", "SHLL", "SHRL",
         "SHRA", "MUL", "MULT", "DIV", "REM", "ADDY", "OR", "XOR", "AND", "FLIP", "CALI", "SECT", "DECT", "SODD", "BPBP", "POBP",
-        "PUBP", "BCPY", "", "", "", "", "", "", "", "", "", "", "", "", "", "",
+        "PBP", "BCPY", "SYSC", "EXIT", "ITTB", "IITB", "ENBI", "DISI", "", "", "", "", "", "", "", "",
         "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",
         "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",
         "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",
