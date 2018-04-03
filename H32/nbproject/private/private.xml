@@ -2,6 +2,25 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+<<<<<<< HEAD
         <group/>
+=======
+<<<<<<< HEAD
+        <group/>
+=======
+        <group>
+<<<<<<< HEAD
+            <file>file:/D:/NetBeansProjects/H32_Simulator/H32/src/instructions/Sout.java</file>
+            <file>file:/D:/NetBeansProjects/H32_Simulator/H32/src/h32/Executable.java</file>
+            <file>file:/D:/NetBeansProjects/H32_Simulator/H32/src/instructions/Ja.java</file>
+            <file>file:/D:/NetBeansProjects/H32_Simulator/H32/src/h32/H32.java</file>
+            <file>file:/D:/NetBeansProjects/H32_Simulator/H32/src/instructions/Exit.java</file>
+=======
+            <file>file:/C:/Users/Whitehurst/Documents/GitHub/H32_Simulator/H32/HelloWorld.mas</file>
+            <file>file:/C:/Users/Whitehurst/Documents/GitHub/H32_Simulator/H32/src/h32/H32.java</file>
+>>>>>>> 4aa94b1dc680051344a8a43a5c531d65abe1940a
+        </group>
+>>>>>>> b2bda66f91ca30c04733d72cd08ce5df8a8b0e99
+>>>>>>> 3720cac3b35988eace45f7925c10eb4134d503b0
     </open-files>
 </project-private>
